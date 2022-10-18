@@ -5960,8 +5960,8 @@ Object.defineProperty(exports, "BinaryReader", {
 
 },{"borsh":"4JCmN"}],"4JCmN":[function(require,module,exports) {
 "use strict";
-var global = arguments[3];
 var Buffer = require("buffer").Buffer;
+var global = arguments[3];
 var __createBinding = this && this.__createBinding || (Object.create ? function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, {
@@ -16648,8 +16648,8 @@ async function signTransaction(...args) {
 exports.signTransaction = signTransaction;
 
 },{"buffer":"lKILT","js-sha256":"ahVaM","./utils/enums":"kjmPo","borsh":"4JCmN","./utils/key_pair":"kBQFP"}],"ahVaM":[function(require,module,exports) {
-var global = arguments[3];
 var process = require("process");
+var global = arguments[3];
 /**
  * [js-sha256]{@link https://github.com/emn178/js-sha256}
  *
@@ -52729,8 +52729,8 @@ var _core = require("@near-wallet-selector/core");
 var _hwTransportWebhid = require("@ledgerhq/hw-transport-webhid");
 var _hwTransportWebhidDefault = parcelHelpers.interopDefault(_hwTransportWebhid);
 var _nearApiJs = require("near-api-js");
-var Buffer = require("buffer").Buffer;
 var global = arguments[3];
+var Buffer = require("buffer").Buffer;
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
 
