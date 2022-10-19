@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "./start.sh",
-    "build": "parcel build index.html --public-url ./",
-    "start": "node index.js"
+    "build": "parcel build index.html --public-url ./"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
