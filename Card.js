@@ -1,13 +1,6 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   solid,
-//   regular,
-//   brands
-// } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 const Card = (props) => {
-  // console.log("finished", props.todo);
   return (
     <div
       className="card"
@@ -41,19 +34,6 @@ const Card = (props) => {
             >
               Delete
             </button>
-            {/* <FontAwesomeIcon
-              icon={solid("circle-check")}
-              size="lg"
-              color="green"
-              onClick={props.onClickCheck}
-              className="mt-10"
-            /> */}
-            {/* <FontAwesomeIcon
-              icon={solid("trash-can")}
-              size="lg"
-              color="red"
-              onClick={props.onClickTrash}
-            /> */}
           </div>
         </div>
       </div>

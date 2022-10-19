@@ -15,7 +15,6 @@ export default function App({ isSignedIn, helloNEAR, wallet }) {
   React.useEffect(() => {
     if (isSignedIn) {
       setIsLoading(true);
-      // fetchData();
       console.log("signed in");
       console.log(helloNEAR.contractId);
       getTodos();
@@ -32,10 +31,11 @@ export default function App({ isSignedIn, helloNEAR, wallet }) {
   async function addTodo(e) {
     setIsLoading(true);
     e.preventDefault();
+
     const todo = e.target[0].value;
     console.log(todo);
     setFormValue("");
-    // await helloNEAR.add_todo(todo);
+
     await helloNEAR.add_todo(todo);
     getTodos();
     setIsLoading(false);
@@ -108,8 +108,6 @@ export default function App({ isSignedIn, helloNEAR, wallet }) {
             <h1>Updating state please wait...</h1>
           ) : (
             todosFromBlockchain.map((item, index) => {
-              // console.log("item is ", item[1]);
-              // console.log("index is ", index);
               return (
                 <div key={index} className="row">
                   <div className="col offset-2 col-8">
@@ -126,39 +124,6 @@ export default function App({ isSignedIn, helloNEAR, wallet }) {
           )}
         </div>
       </div>
-      {/*<main className={uiPleaseWait ? 'please-wait' : ''}>
-        <h1>Todo App</h1>
-        <form onSubmit={addTodo} className="change">
-          <label>Change greeting:</label>
-          <div>
-            <input
-              autoComplete="off"
-              defaultValue={valueFromBlockchain}
-              id="greetingInput"
-            />
-            <button>
-              <span>Add Todo</span>
-              <div className="loader"></div>
-            </button>
-          </div>
-        </form>
-        <div>
-          {todosFromBlockchain.map((item, index) => {
-            return (
-              <div key={index} className="row">
-                <div className="col offset-2 col-8">
-                  <Card
-                    todo={item}
-                    id = {index}
-                    onClickTrash={() => removeTodo(item)}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <EducationalText/>
-      </main> */}
     </div>
   );
 }
